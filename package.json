@@ -2,7 +2,7 @@
   "name": "ribbons",
   "source": "index.html",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index.html --public-url",
     "build": "parcel build index.html --no-minify --public-url ./",
     "deploy": "gh-pages -d dist"
   },
