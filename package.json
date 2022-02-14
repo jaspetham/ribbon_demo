@@ -3,7 +3,8 @@
   "source": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --no-minify --public-url ./"
+    "build": "parcel build index.html --no-minify --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "dat.gui": "^0.7.7",
