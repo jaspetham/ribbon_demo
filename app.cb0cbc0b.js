@@ -46255,13 +46255,13 @@ module.exports = "#define GLSLIFY 1\nuniform float time;\nvarying vec2 vUv;\nvar
 },{}],"k6p3":[function(require,module,exports) {
 module.exports = "#define GLSLIFY 1\nuniform float time;\nuniform float progress;\nuniform sampler2D texture1;\nuniform vec4 resolution;\nvarying vec2 vUv;\nvarying vec3 vPosition;\nfloat PI=3.141592653589793238;\nvoid main(){\n    // vec2 newUV = (vUv - vec2(0.5))*resolution.zw + vec2(0.5);\n    gl_FragColor=vec4(vUv,0.,1.);\n}";
 },{}],"Y3ZW":[function(require,module,exports) {
-module.exports = "/front.c12693d4.png";
+module.exports = "front.c12693d4.png";
 },{}],"n0kf":[function(require,module,exports) {
-module.exports = "/back.96c2f2d5.png";
+module.exports = "back.96c2f2d5.png";
 },{}],"NXti":[function(require,module,exports) {
-module.exports = "/front2.7ba67e26.png";
+module.exports = "front2.7ba67e26.png";
 },{}],"tdFh":[function(require,module,exports) {
-module.exports = "/back2.dbd52060.png";
+module.exports = "back2.dbd52060.png";
 },{}],"A2T1":[function(require,module,exports) {
 "use strict";
 
@@ -46540,4 +46540,4 @@ new Sketch({
   dom: document.getElementById("container")
 });
 },{"three":"gBK8","three/examples/jsm/controls/OrbitControls.js":"x87H","dat.gui":"ArXC","gsap":"f8Z0","./shaders/vertex.glsl":"hNHB","./shaders/fragment.glsl":"k6p3","./assets/img/front.png":"Y3ZW","./assets/img/back.png":"n0kf","./assets/img/front2.png":"NXti","./assets/img/back2.png":"tdFh"}]},{},["A2T1"], null)
-//# sourceMappingURL=/app.cb0cbc0b.js.map
+//# sourceMappingURL=app.cb0cbc0b.js.map
