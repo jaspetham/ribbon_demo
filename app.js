@@ -32,7 +32,7 @@ export default class Sketch {
       0.001,
       1000
     );
-    this.camera.position.set(0, 0.1, 1.5);
+    this.camera.position.set(0, 0.1, 1.75);
     this.cameraGroup.add(this.camera)
 
     this.objectsDistance = 3
@@ -157,13 +157,13 @@ export default class Sketch {
     this.plane = new THREE.Mesh(this.geometry, new THREE.MeshBasicMaterial({color:0x00ff00,wireframe:true}));
     // this.scene.add(this.plane);
 
-    let num = 3;
+    let num = 7;
     let curvePoints = []
     for (let i = 0; i < num; i++) {
       let theta = (i/num * Math.PI*2);
         curvePoints.push(
           new THREE.Vector3().setFromSphericalCoords(
-            1, Math.PI / 2 + 0.02 * (Math.random() - 0.5),theta
+            1, Math.PI / 2  + (Math.random() - 0.5),theta
           )
         )
     }
@@ -187,7 +187,7 @@ export default class Sketch {
     let frenetFrame = curve.computeFrenetFrames(number,true)
     let spacePoints = curve.getSpacedPoints(number)
     let tempPlane = new THREE.PlaneBufferGeometry(1,1,number,1)
-    let dimensions = [-.12,0.12]
+    let dimensions = [-.1,0.1]
 
     this.materials = [frontMaterial,backMaterial]
     this.materials2 = [frontMaterial2,backMaterial2]
